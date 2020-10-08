@@ -12,18 +12,65 @@
 </head>
 
 <body>
-  
+
 
     <div class="row mt-5">
         <div class="mx-auto">
 
             <form name="myform" action="">
-                <label for="firstinput">toto</label>
-                <input id="firstinput" type="text" name="firstinput" value="toto">
-        
-                <label for="secondinput">tata</label>
-                <input id="secondinput" size="10" maxlength="5" type="text" name="secondinput" value="toto">
+                <p>
+
+                    <label for="firstinput">toto</label>
+                    <input id="firstinput" type="text" name="firstinput" value="toto" required>
+                </p>
+
+                <p>
+
+                    <label for="secondinput">tata</label>
+                    <input id="secondinput" size="10" maxlength="5" type="text" name="secondinput" value="toto">
+                </p>
+
+                <p>
+
+                    <label for="secondinput">code pos</label>
+                    <input id="secondinput" size="10" maxlength="5" type="text" name="secondinput" pattern="[0-9]{5}">
+                </p>
+                <p>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </p>
+
+                <p>
+                    <select name="" id="">
+                        <option value="1">toto</option>
+                        <option value="2">taa</option>
+                        <option value="3" selected>titi</option>
+                    </select>
+                </p>
+
+
+                <input type="submit" value="submit">
             </form>
+        </br>
+            <form action="">
+                Sexe
+                <p>
+                    <input type="radio" name="sexe" id="">Masculin</br>
+                    <input type="radio" name="sexe" id="">Feminin</br>
+                    <input type="radio" name="sexe" id="">et autre</br>
+                </p>
+                <input type="submit" value="submit">
+            </form>
+
+            <form action="">
+                Sexe
+                <p>
+                    <input type="checkbox" name="n1" id="">Masculin</br>
+                    <input type="checkbox" name="n2" id="" checked>Feminin</br>
+                    <input type="checkbox" name="n3" id=""> autre</br>
+                </p>
+                <input type="submit" value="submit">
+            </form>
+
 
             <form>
                 <div class="form-group">

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <form class=" ml-5" action="">
+        <div class="m-5">
+            <fieldset class="border p-2">
+                <legend class="w-auto">Client</legend>
+
+                <p>
+                    <label for="name">Nom et Prénom</label>
+                    <input type="text" placeholder="Nom et prénom" id="name">
+                </p>
+                <p>
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse">
+                </p>
+                <p>
+                    <label for="postal">Code Postale</label>
+                    <input type="text" pattern="[0-9]{5}">
+                </p>
+                <p>
+                    <label for="country">Pays</label>
+                    <input type="text" value="France" readonly>
+                </p>
+
+            </fieldset>
+
+        </div>
+
+        <div class="m-5">
+            <fieldset class="border p-2">
+                <legend class="w-auto">Commande</legend>
+                <p>
+                    <label for="name">Modèle:</label>
+                    <input type="text" value="Road 66" id="name">
+                </p>
+                <p>
+                    <label class=" ml-2" for="taille">Taille:</label></br>
+                    <input class=" ml-2 col-2" type="range" min="1" max="4" step="1" id="taille"></br>
+
+                    <label class=" col-2 ml-1  d-flex justify-content-between" for="taille"> <span>S </span><span>
+                            M</span><span> L</span><span> XL </span> </label>
+                </p>
+                <p>
+                    <label for="postal">Quantité:</label>
+                    <input type="number" min="1" max="165" step="3" value="1">
+                </p>
+            </fieldset>
+
+
+        </div>
+
+        <input class="mr-3" type="submit" value="Commander">
+        <input type="submit" value="Recommencer">
+    </form>
+</body>
+
+</html>
