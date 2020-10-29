@@ -1,0 +1,26 @@
+#conteneur {
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.element {
+    width: 150px;
+    height: 40px;
+    border: 2px solid;
+    margin-right: 10px;
+}
+
+div>div:nth-of-type(1) {
+    background-color: blue;
+}
+
+div>div:nth-of-type(2) {
+    background-color: white;
+}
+
+div>div:nth-of-type(3) {
+    background-color: red;
+}
