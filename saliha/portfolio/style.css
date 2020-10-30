@@ -1,0 +1,117 @@
+main {
+    height: 900px;
+    
+    border: 1px solid;
+    border-radius: 10%;
+}
+
+.logo {
+    position: absolute;
+   
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    top:1%;
+    left: 1%;
+}
+
+.portfolio_header {
+    
+}
+a{
+    text-decoration: none;
+}
+header {
+ 
+    position: relative;
+    margin-bottom: 100px;
+   
+}
+
+
+
+.portfolio_title {
+   text-align: center;
+   margin-top: 25px;
+}
+
+.presentation{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 300px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 50% 50% 0 0; 
+    
+
+}
+
+.exp{
+
+    height: 45px;
+    width: 98px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.abme{
+    height: 45px;
+    width: 98px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.skills{
+    height: 45px;
+    width: 98px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   height: 50px;
+   margin: 2% 2% 5% 4%;
+  }
+  .services {
+    
+    border: 1px solid;
+    border-radius: 10px 0 0 10px;
+    border-right: 0;
+    
+  }
+  .new_project { 
+    
+    
+    border-radius: 10px 0 0 10px;
+    border: 1px solid;
+  }
+  .current_project {
+   
+    
+    border-radius: 0 10px 10px 0;
+    border: 1px solid;
+  }
+  .achievements {
+    border: 1px solid;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+    
+  }
