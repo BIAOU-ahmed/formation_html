@@ -1,56 +1,58 @@
+body {
+    margin: 2% 5% 1% 5%;
+}
+
 main {
-    height: 900px;
-    
+    display: grid;
+    grid-template-rows: 1fr 10% 1fr 70% 10%;
     border: 1px solid;
     border-radius: 10%;
+    grid-row-gap: 10px;
 }
 
 .logo {
-    position: absolute;
-   
     height: 100px;
     width: 100px;
     border: 1px solid;
-    top:1%;
-    left: 1%;
 }
 
 .portfolio_header {
-    
+    display: grid;
+    grid-template-columns: 10% 90%;
 }
-a{
+
+a {
     text-decoration: none;
 }
-header {
- 
-    position: relative;
-    margin-bottom: 100px;
-   
-}
 
-
+header {}
 
 .portfolio_title {
-   text-align: center;
-   margin-top: 25px;
+    text-align: center;
+    margin-top: 25px;
 }
 
-.presentation{
+.presentation {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 20% 60% 20%;
     grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ". a ." "b . c" ". d .";
     height: 300px;
     width: 100%;
     border: 1px solid;
-    border-radius: 50% 50% 0 0; 
-    
-
+    border-radius: 50% 50% 0 0;
+    justify-items: center;
+    align-items: center;
 }
 
-.exp{
+.nom {
+    grid-area: a;
+}
 
+.exp {
+    grid-area: b;
     height: 45px;
-    width: 98px;
+    
     border: 1px solid;
     border-radius: 10px;
     font-weight: bold;
@@ -59,9 +61,11 @@ header {
     display: flex;
     align-items: center;
 }
-.abme{
+
+.abme {
+    grid-area: d;
     height: 45px;
-    width: 98px;
+   
     border: 1px solid;
     border-radius: 10px;
     font-weight: bold;
@@ -71,9 +75,11 @@ header {
     display: flex;
     align-items: center;
 }
-.skills{
+
+.skills {
+    grid-area: c;
     height: 45px;
-    width: 98px;
+    
     border: 1px solid;
     border-radius: 10px;
     font-weight: bold;
@@ -87,31 +93,152 @@ header {
 .navigation {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-   height: 50px;
-   margin: 2% 2% 5% 4%;
-  }
-  .services {
-    
+    height: 50px;
+    margin: 2% 2% 5% 5%;
+    width: 90%;
+}
+
+.services {
     border: 1px solid;
     border-radius: 10px 0 0 10px;
     border-right: 0;
-    
-  }
-  .new_project { 
-    
-    
+}
+
+.new_project {
     border-radius: 10px 0 0 10px;
     border: 1px solid;
-  }
-  .current_project {
-   
-    
+}
+
+.current_project {
     border-radius: 0 10px 10px 0;
     border: 1px solid;
-  }
-  .achievements {
+}
+
+.achievements {
     border: 1px solid;
     border-left: 0;
     border-radius: 0 10px 10px 0;
+}
+
+.conteneur {
+    display: grid;
+    grid-template-columns: 14% 70% 14%;
+    grid-gap: 10px;
+    padding-top: 100px;
+}
+
+.left {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    height: 800px;
+    justify-content: center;
+    grid-row-gap: 30px;
+    padding: 38% 3% 32% 3%;
+}
+
+.left>a {
+    border: 1px solid;
+    height: 100%;
     
-  }
+}
+
+.barre {
+    border-top: 1px solid;
+    border-radius: 10px 10px 10px 0;
+    padding-top: 100px;
+    height: 10px;
+}
+
+.center {
+    border-radius: 10%;
+    border: 1px solid;
+}
+
+.right {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    border: 1px solid;
+    margin: 36% 0 41% 0;
+}
+
+.haut {
+    border: 1px solid;
+}
+
+.info {
+    margin-right: 2%;
+    text-align: right;
+}
+
+footer {
+    border: 1px solid;
+    height: 100px;
+    width: 87%;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    padding-left: 4%;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 35% 10% 5%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "a . . . . . . ." 
+                         "b c d e f g h i" ;
+
+}
+i{
+    border: 1px solid;
+}
+.intouch{
+    grid-area: a;
+    grid-column: span 8;
+    font-size: 26px;
+}
+.mail{
+    grid-area: b;
+}
+
+.tel{
+    grid-area: c;
+}
+
+.tel::before{
+    /* content: url("images/smartphone.png"); */
+}
+.github{
+    grid-area: d;
+}
+
+.github::before{
+    /* content: url("images/github_icon.png"); */
+}
+
+.twiter{
+    grid-area: e;
+}
+
+.twiter::before{
+    /* content: url("images/twitter.jpg");
+} */
+}
+.insta{
+    grid-area: f;
+}
+
+.insta::before{
+    /* content: url("images/icon-instagram.png"); */
+}
+
+.home{
+    grid-area: g;
+}
+
+.home::before{
+    /* content: url("images/Home.ico"); */
+}
+
+.foot_logo{
+    grid-area: h;
+}
+.copy{
+    grid-area: i;
+}
